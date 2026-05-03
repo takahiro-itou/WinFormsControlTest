@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
@@ -16,11 +17,14 @@
 
   <Import Project="..\Props\OutputApps.props" />
 
-  <ItemGroup Condition=" '$(TargetFramework)' == 'net48' ">
-    <ProjectReference Include="..\Cli.NetFramework4.8\Wrapper.Net48.vcxproj" />
-  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinFormsControl\WinFormsControl.NetOld.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Program.cs" />
   </ItemGroup>
 
 </Project>
