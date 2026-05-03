@@ -12,8 +12,4 @@
 
   <Import Project="..\Props\OutputLibs.props" />
 
-  <ItemGroup>
-    <ProjectReference Include="..\Cli.Net8\Wrapper.Net80.vcxproj" />
-  </ItemGroup>
-
 </Project>
