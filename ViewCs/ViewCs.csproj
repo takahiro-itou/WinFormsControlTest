@@ -2,6 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <ImplicitUsings>enable</ImplicitUsings>
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
@@ -19,6 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WinFormsControl\WinFormsControl.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Form1.Designer.cs" />
+    <Compile Include="Form1.cs" />
+    <Compile Include="Program.cs" />
   </ItemGroup>
 
 </Project>
