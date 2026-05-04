@@ -3,6 +3,7 @@
 
   <PropertyGroup>
     <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <MyType>WindowsForms</MyType>
     <OutputType>WinExe</OutputType>
     <Platforms>x64;Win32</Platforms>
@@ -37,6 +38,13 @@
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
     </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Form1.Designer.vb" />
+    <Compile Include="Form1.vb" />
+    <Compile Include="My Project\Application.Designer.vb" />
   </ItemGroup>
 
 </Project>
